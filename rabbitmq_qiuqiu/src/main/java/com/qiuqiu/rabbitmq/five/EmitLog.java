@@ -1,6 +1,6 @@
-package com.qiuqiu.rabbit.five;
+package com.qiuqiu.rabbitmq.five;
 
-import com.qiuqiu.rabbit.utils.RabbitMqUtils;
+import com.qiuqiu.rabbitmq.utils.RabbitMQUtils;
 import com.rabbitmq.client.Channel;
 
 import java.util.Scanner;
@@ -15,7 +15,7 @@ import java.util.Scanner;
 public class EmitLog {
     private static final String EXCHANGE_NAME = "logs";
     public static void main(String[] argv) throws Exception {
-        try (Channel channel = RabbitMqUtils.getChannel()) {
+        try (Channel channel = RabbitMQUtils.getChannel()) {
 /**
  * 声明一个 exchange
  * 1.exchange 的名称

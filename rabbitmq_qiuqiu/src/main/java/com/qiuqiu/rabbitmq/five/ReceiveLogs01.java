@@ -1,6 +1,6 @@
-package com.qiuqiu.rabbit.five;
+package com.qiuqiu.rabbitmq.five;
 
-
+import com.qiuqiu.rabbitmq.utils.RabbitMQUtils;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.DeliverCallback;
 
@@ -11,10 +11,10 @@ import com.rabbitmq.client.DeliverCallback;
  * @author Hy
  * @since JDK 1.8
  */
-public class ReceiveLogs02 {
+public class ReceiveLogs01 {
     private static final String EXCHANGE_NAME = "logs";
     public static void main(String[] argv) throws Exception {
-        Channel channel = RabbitMqUtils.getChannel();
+        Channel channel = RabbitMQUtils.getChannel();
         channel.exchangeDeclare(EXCHANGE_NAME, "fanout");
 /**
  * 生成一个临时的队列 队列的名称是随机的
