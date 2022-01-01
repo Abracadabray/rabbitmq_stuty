@@ -5,6 +5,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>rabbitmq</module>
+        <module>rabbitmq_qiuqiu</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
